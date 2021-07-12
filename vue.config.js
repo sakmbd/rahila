@@ -3,9 +3,9 @@ module.exports = {
     'vuetify'
   ],
   pwa: {
-    themeColor: "#130f40",
-    msTileColor: "#130f40",
-    name: "My app",
+    themeColor: "#E91E6",
+    msTileColor: "#E91E6",
+    name: "Rahila",
     manifestOptions: {
       "icons": [
         {
