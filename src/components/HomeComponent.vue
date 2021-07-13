@@ -2,7 +2,7 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-        <video width="100%" controls>
+        <video width="100%" controls autoplay>
           <source src="@/assets/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -14,7 +14,7 @@
           <v-img
             class="white--text align-end"
             height="400x"
-            src="/photos/Rahila_Rehman (60).jpg"
+            src="/photos/1 (60).jpg"
           >
           </v-img>
           <v-card-text class="pink darken-1">
@@ -31,7 +31,7 @@
           <v-img
             class="white--text align-end"
             height="400px"
-            src="/photos/Rahila_Rehman (56).jpg"
+            src="/photos/1 (56).jpg"
           >
             <v-card-title class="pink"
               >Happy Birthday Rahila Rehman</v-card-title
@@ -169,9 +169,9 @@ export default {
   display: flex;
 } */
 .image {
-  height: 100px;
-  width: 200px;
   margin: 30px;
+  background-size: cover;
+  height: 200px;
 }
 .gallery {
   background: url(https://2.bp.blogspot.com/-Hm3T7xvyEHY/VVFzNTane3I/AAAAAAAANEU/5u8UrSAC26Y/s1600/body.png.);

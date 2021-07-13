@@ -7,7 +7,7 @@ module.exports = {
     msTileColor: '#e91e63',
     name: 'Happy Birthday Rahila Rehman!',
     shortName: 'Rahila',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#e91e63',
     display: 'standalone',
     orientation: 'portrait',
     description: 'Happy Birthday Rahila Rehman!',
