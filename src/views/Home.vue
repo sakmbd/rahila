@@ -8,8 +8,8 @@
         width="500"
       >
         <v-card>
-          <v-card-title class="text-h5 white--text pink">
-            When is Rahila's birthday?
+          <v-card-title class="text-h6 white--text pink">
+            Select Rahila's birthday?
           </v-card-title>
           <v-spacer/>
 
@@ -51,7 +51,7 @@
             </v-select>
 
             <v-alert type="error" v-if="errorFlag">
-              You have selected wrong birth date.
+              Wrong answer!
             </v-alert>
           </v-card-text>
 
