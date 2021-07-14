@@ -91,14 +91,40 @@ export default {
       days: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
     }
   },
+  created () {
+    this.checkAlreadyAnswered()
+  },
   methods: {
     checkDOB () {
       if (this.day === 20 && this.month === 'July') {
         this.dialog = false
+        localStorage.setItem('isAnswered', true)
+        this.$toasted.success('Bingoo!! <br/> You give the correct answer now can see all stuff related to Rahila.', {
+          theme: 'bubble',
+          position: 'top-right',
+          className: 'Toaster--Success',
+          duration: 7000
+        })
       } else {
         this.errorFlag = true
+        localStorage.setItem('isAnswered', false)
+      }
+    },
+    checkAlreadyAnswered () {
+      const isAnswered = localStorage.getItem('isAnswered')
+      if (isAnswered === 'true') {
+        this.dialog = false
       }
     }
   }
 }
 </script>
+
+<style>
+.Toaster--Success {
+  height: 125px !important;
+  line-height: 1 !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+</style>

@@ -4,6 +4,9 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+import Toasted from 'vue-toasted'
+
+Vue.use(Toasted)
 
 Vue.config.productionTip = false
 
