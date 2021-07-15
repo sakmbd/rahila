@@ -10,7 +10,7 @@
     </v-row>
     <v-row class="text-center">
       <v-col cols="12">
-        <v-card class="mx-auto" max-width="400">
+        <v-card class="mx-auto">
           <v-img
             class="white--text align-end"
             height="400x"
@@ -27,7 +27,7 @@
       </v-col>
 
       <v-col cols="12">
-        <v-card class="mx-auto" max-width="400">
+        <v-card class="mx-auto">
           <v-img
             class="white--text align-end"
             height="400px"
@@ -41,7 +41,7 @@
       </v-col>
 
       <v-col cols="12">
-        <v-card class="mx-auto" color="#26c6da" dark max-width="400">
+        <v-card class="mx-auto" color="#26c6da" dark>
           <v-card-title>
             <v-icon large left>
               mdi-twitter
@@ -60,7 +60,7 @@
 
     <v-row class="text-center">
       <v-col cols="12">
-        <v-card class="mx-auto gallery" dark max-width="400">
+        <v-card class="mx-auto gallery" dark>
           <v-card-title>
             <v-icon large left class="black--text">
               mdi-camera
@@ -70,13 +70,13 @@
           <CoolLightBox :items="images" :index="index" @close="index = null">
           </CoolLightBox>
           <v-row class="images-wrapper">
-            <v-col cols="4"
+            <div
               class="image"
               v-for="(image, imageIndex) in images"
               :key="imageIndex"
               @click="index = imageIndex"
               :style="{ backgroundImage: 'url(\'' + image + '\')' }"
-            ></v-col>
+            ></div>
           </v-row>
         </v-card>
       </v-col>
@@ -169,9 +169,10 @@ export default {
   display: flex;
 } */
 .image {
-  margin: 30px;
+  margin: 15px;
   background-size: cover;
-  height: 200px;
+  height: 80px;
+  width: 25%;
 }
 .gallery {
   background: url(https://2.bp.blogspot.com/-Hm3T7xvyEHY/VVFzNTane3I/AAAAAAAANEU/5u8UrSAC26Y/s1600/body.png.);

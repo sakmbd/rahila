@@ -99,7 +99,7 @@ export default {
       if (this.day === 20 && this.month === 'July') {
         this.dialog = false
         localStorage.setItem('isAnswered', true)
-        this.$toasted.success('Bingoo!! <br/> You give the correct answer now can see all stuff related to Rahila.', {
+        this.$toasted.success('<div class=toastParent><p class=toastM1>Bingoo!!</p> <p class=toastM2>You give the correct answer now you can see all stuff related to Rahila Rehman.</p></div>', {
           theme: 'bubble',
           position: 'top-right',
           className: 'Toaster--Success',
@@ -123,8 +123,14 @@ export default {
 <style>
 .Toaster--Success {
   height: 125px !important;
-  line-height: 1 !important;
-  font-size: 24px !important;
-  font-weight: bold !important;
+}
+.toastM1 {
+  line-height: 1;
+  font-size: 24px;
+  font-weight: bold;
+}
+.toastM2 {
+  line-height: 1.6;
+  margin-top: 11px;
 }
 </style>
